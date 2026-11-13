@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"], .stApp {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif !important;
+    background: radial-gradient(circle at 50% -10%, #1a1728 0%, #0d0c14 45%, #070709 100%) fixed !important;
+    color: #f5f5f7 !important;
+    letter-spacing: -0.02em;
+    -webkit-font-smoothing: antialiased;
+}
+
+#MainMenu, footer, header {
+    visibility: hidden;
+    display: none !important;
+}
+
+.block-container {
+    max-width: 660px !important;
+    margin: 0 auto !important;
+    padding-top: 1.5rem !important;
+    padding-bottom: 7.5rem !important;
+}
+
+.portada-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 1.2rem auto 2.2rem auto;
+}
+
+.portada-contenedor img {
+    border-radius: 18px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.75), 0 0 60px rgba(120, 110, 240, 0.18), 0 0 0 1px rgba(255, 255, 255, 0.12);
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease;
+}
+
+.portada-contenedor img:hover {
+    transform: scale(1.025);
+    box-shadow: 0 30px 65px rgba(0, 0, 0, 0.85), 0 0 80px rgba(140, 120, 255, 0.28), 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.portada-titulo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    line-height: 1.25;
+    margin-bottom: 0.2rem;
+}
+
+.portada-artista {
+    font-size: 0.9rem;
+    color: #98989f;
+    margin-top: 2px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto 2.2rem auto;
+    padding: 1.2rem 1.6rem;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stat-num {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+}
+
+.stat-label {
+    font-size: 0.72rem;
+    color: #98989f;
+    letter-spacing: 0.04em;
+    text-transform: lowercase;
+    margin-top: 0.25rem;
+}
+
+.destacado-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(24px) saturate(160%);
+    -webkit-backdrop-filter: blur(24px) saturate(160%);
+    border-radius: 18px;
+    padding: 22px 24px;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+    transition: all 0.25s ease;
+}
+
+.destacado-card:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.16);
+}
+
+.destacado-tag {
+    font-size: 0.72rem;
+    color: #a1a1aa;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0.35rem;
+}
+
+.destacado-nombre {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: -0.03em;
+}
+
+.seccion-label {
+    font-size: 0.8rem;
+    color: #98989f;
+    letter-spacing: 0.05em;
+    text-transform: lowercase;
+    margin-top: 1.6rem;
+    margin-bottom: 0.9rem;
+}
+
+.playlist-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 20px;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 14px;
+    margin-bottom: 8px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+
+.playlist-item:hover {
+    border-color: rgba(255, 255, 255, 0.18);
+    background: rgba(255, 255, 255, 0.07);
+    transform: translateY(-1.5px);
+}
+
+.playlist-item-nombre {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.playlist-item-meta {
+    font-size: 0.82rem;
+    color: #98989f;
+}
+
+div:has(> div > div > button[key="btn_nav_enfoque"]),
+div:has(> div > div > button[key="btn_nav_playlists"]) {
+    position: fixed !important;
+    bottom: 24px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: auto !important;
+    background: rgba(20, 20, 26, 0.75) !important;
+    backdrop-filter: blur(32px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(32px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 9999px !important;
+    padding: 5px 14px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65), 0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.14) !important;
+    z-index: 999999 !important;
+}
+
+.stButton > button {
+    background: rgba(255, 255, 255, 0.07) !important;
+    color: #f5f5f7 !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    border-radius: 9999px !important;
+    font-size: 0.88rem !important;
+    font-weight: 500 !important;
+    padding: 7px 18px !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.stButton > button:hover {
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.28) !important;
+    color: #ffffff !important;
+    transform: translateY(-1.5px) !important;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
+}
+
+.stButton > button:active {
+    transform: translateY(0px) scale(0.98) !important;
+}
+
+button[key="btn_logo"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    letter-spacing: -0.04em !important;
+    padding: 0 !important;
+    opacity: 0.92;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+button[key="btn_logo"]:hover {
+    opacity: 1 !important;
+    color: #ffffff !important;
+    background: transparent !important;
+    transform: scale(1.03) !important;
+}
+
+button[key^="btn_nav_"] {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    letter-spacing: -0.01em !important;
+    color: #a1a1aa !important;
+    text-transform: lowercase !important;
+    padding: 8px 20px !important;
+    border-radius: 9999px !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+button[key^="btn_nav_"]:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    transform: translateY(-1px) !important;
+}
+
+div[data-testid="stHorizontalBlock"] button[key^="btn_art_"] {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.09) !important;
+    border-radius: 9999px !important;
+    color: #d1d1d6 !important;
+    font-size: 0.78rem !important;
+    font-weight: 450 !important;
+    padding: 6px 12px !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.2s ease !important;
+}
+
+div[data-testid="stHorizontalBlock"] button[key^="btn_art_"]:hover {
+    color: #ffffff !important;
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    background: rgba(255, 255, 255, 0.14) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+button[key^="btn_amb_"] {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 9999px !important;
+    color: #d1d1d6 !important;
+    font-size: 0.84rem !important;
+    padding: 7px 16px !important;
+}
+
+button[key^="btn_amb_"]:hover {
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.26) !important;
+}
+
+div[data-testid="stPopover"] > button {
+    background: rgba(255, 255, 255, 0.07) !important;
+    border: 1px solid rgba(255, 255, 255, 0.14) !important;
+    border-radius: 9999px !important;
+    color: #ffffff !important;
+    font-size: 1.25rem !important;
+    font-weight: 300 !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    backdrop-filter: blur(14px) !important;
+    -webkit-backdrop-filter: blur(14px) !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25) !important;
+    transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+div[data-testid="stPopover"] > button:hover {
+    border-color: rgba(255, 255, 255, 0.4) !important;
+    color: #ffffff !important;
+    background: rgba(255, 255, 255, 0.2) !important;
+    transform: scale(1.08) !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45) !important;
+}
+
+div[data-testid="stPopoverBody"] {
+    background: rgba(18, 18, 24, 0.88) !important;
+    backdrop-filter: blur(32px) saturate(180%) !important;
+    -webkit-backdrop-filter: blur(32px) saturate(180%) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    border-radius: 16px !important;
+    padding: 18px !important;
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
+}
+
+button[key="btn_dado"], button[key="btn_dado_enfoque"] {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 9999px !important;
+    width: 42px !important;
+    height: 42px !important;
+    min-height: 42px !important;
+    font-size: 1.3rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease, border-color 0.2s ease !important;
+}
+
+button[key="btn_dado"]:hover, button[key="btn_dado_enfoque"]:hover {
+    transform: rotate(25deg) scale(1.1) !important;
+    background: rgba(255, 255, 255, 0.16) !important;
+    border-color: rgba(255, 255, 255, 0.32) !important;
+}
+
+button[key*="del_"] {
+    color: #ff6b6b !important;
+    border-color: rgba(255, 107, 107, 0.25) !important;
+    background: rgba(255, 107, 107, 0.06) !important;
+}
+
+button[key*="del_"]:hover {
+    color: #ffffff !important;
+    background: rgba(255, 107, 107, 0.25) !important;
+    border-color: rgba(255, 107, 107, 0.5) !important;
+}
+
+.stTextInput > div > div > input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 9999px !important;
+    color: #ffffff !important;
+    font-size: 0.92rem !important;
+    padding: 12px 24px !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.06) !important;
+    transition: all 0.25s ease !important;
+}
+
+.stTextInput > div > div > input:focus {
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    background: rgba(255, 255, 255, 0.09) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.2) !important;
+}
+
+.stSelectbox > div > div {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 12px !important;
+    color: #ffffff !important;
+    backdrop-filter: blur(14px) !important;
+}
+
+img {
+    border-radius: 12px;
+    filter: none !important;
+    opacity: 1 !important;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.08);
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+audio {
+    width: 100%;
+    height: 32px;
+    filter: invert(93%) hue-rotate(180deg) brightness(1.1) contrast(1.1);
+    opacity: 0.9;
+    margin-top: 8px;
+    border-radius: 9999px;
+}
+
+hr {
+    border: none !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.07) !important;
+    margin: 1.4rem 0 !important;
+}
+
+div[data-testid="stExpander"] {
+    background: rgba(255, 255, 255, 0.03) !important;
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 14px !important;
+    backdrop-filter: blur(14px) !important;
+}
+
+a {
+    color: #a1a1aa !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+a:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+.player-bar-container {
+    background: rgba(18, 18, 25, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    padding: 16px 20px;
+    margin: 1.2rem 0 1.8rem 0;
+    box-shadow: 0 20px 48px rgba(0, 0, 0, 0.65), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+}
+
+.rank-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 9999px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    font-size: 0.76rem;
+    font-weight: 600;
+    margin-right: 6px;
+}
+
+.artista-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 1.2rem auto 1.8rem auto;
+}
+
+.artista-header img {
+    border-radius: 9999px !important;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 60px rgba(120, 100, 255, 0.25), 0 0 0 2px rgba(255, 255, 255, 0.2) !important;
+    margin-bottom: 1rem !important;
+}
+
+button[key^="btn_fav_"] {
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 9999px !important;
+    width: 36px !important;
+    height: 36px !important;
+    min-height: 36px !important;
+    font-size: 1rem !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2) !important;
+}
+
+button[key^="btn_fav_"]:hover {
+    background: rgba(255, 255, 255, 0.18) !important;
+    border-color: rgba(255, 255, 255, 0.35) !important;
+    transform: scale(1.1) !important;
+}
+
+button[key^="btn_subnav_"] {
+    font-size: 0.84rem !important;
+    font-weight: 500 !important;
+    padding: 6px 16px !important;
+    border-radius: 9999px !important;
+    letter-spacing: 0.01em !important;
+}
+
+button[key^="btn_gen_"] {
+    font-size: 0.78rem !important;
+    padding: 6px 12px !important;
+    border-radius: 9999px !important;
+}

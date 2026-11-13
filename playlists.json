@@ -1,0 +1,50 @@
+{
+  "prueba": [
+    {
+      "id": 3818963601,
+      "title": "Dracula (with JENNIE)",
+      "artist": "Tame Impala",
+      "artist_id": 134790,
+      "album": "Dracula (with JENNIE)",
+      "duration": 209,
+      "cover": "https://cdn-images.dzcdn.net/images/cover/b868399da682f34dcd7d98af1c0de80b/250x250-000000-80-0-0.jpg",
+      "preview": "https://cdnt-preview.dzcdn.net/api/1/1/6/2/5/0/6254df268039f4200674df6d63701e33.mp3?hdnea=exp=1794545287~acl=/api/1/1/6/2/5/0/6254df268039f4200674df6d63701e33.mp3*~data=user_id=0,application_id=42~hmac=048da6fa2ba5a395ac230fc3a5844df54b727b385a01345bfc5c957c5c084c47",
+      "link": "https://www.deezer.com/track/3818963601"
+    },
+    {
+      "id": 3895241341,
+      "title": "Boston",
+      "artist": "STELLA LEFTY",
+      "artist_id": 181157207,
+      "album": "Boston",
+      "duration": 170,
+      "cover": "https://cdn-images.dzcdn.net/images/cover/66d6baca9df5092af22a710ce10d39cf/250x250-000000-80-0-0.jpg",
+      "preview": "https://cdnt-preview.dzcdn.net/api/1/1/a/d/f/0/adf281db3129088dd0e88c58e64a3ca3.mp3?hdnea=exp=1794545287~acl=/api/1/1/a/d/f/0/adf281db3129088dd0e88c58e64a3ca3.mp3*~data=user_id=0,application_id=42~hmac=27b527678c5ce1980a9618a5da3f34aa1fa282d6df2207ceb5afc8c62db3c4cc",
+      "link": "https://www.deezer.com/track/3895241341"
+    },
+    {
+      "id": 4195078842,
+      "title": "Te Estoy Correteando",
+      "artist": "Latin Mafia",
+      "artist_id": 6851443,
+      "album": "9 months & 50 hours",
+      "duration": 193,
+      "cover": "https://cdn-images.dzcdn.net/images/cover/b945dcfb50bf0dea43fddbb196c5bd12/250x250-000000-80-0-0.jpg",
+      "preview": "https://cdnt-preview.dzcdn.net/api/1/1/b/3/7/0/b3701e106928d31d593065ad79773578.mp3?hdnea=exp=1794545287~acl=/api/1/1/b/3/7/0/b3701e106928d31d593065ad79773578.mp3*~data=user_id=0,application_id=42~hmac=5ba5d8df289a550ebb9451e89f6533d747687541716b3ff5420cd2127165fba7",
+      "link": "https://www.deezer.com/track/4195078842"
+    }
+  ],
+  "favoritos": [
+    {
+      "id": 2297781365,
+      "title": "Ode to the Orion (Ambient Piano to Help You Sleep)",
+      "artist": "Instrumental Piano for Sleep",
+      "artist_id": 215057545,
+      "album": "Ethereal Echoes: The Tranquility of Time",
+      "duration": 178,
+      "cover": "https://cdn-images.dzcdn.net/images/cover/555d33b1c724b32fd7c3304e8e634e3a/250x250-000000-80-0-0.jpg",
+      "preview": "https://cdnt-preview.dzcdn.net/api/1/1/7/a/d/0/7adfafcd9376014f7aecfdbd4138475e.mp3?hdnea=exp=1794545488~acl=/api/1/1/7/a/d/0/7adfafcd9376014f7aecfdbd4138475e.mp3*~data=user_id=0,application_id=42~hmac=7bbc8ea2f3f6a266f2f95e04e5811130b565536e2569b3253234c23b3ec7df67",
+      "link": "https://www.deezer.com/track/2297781365"
+    }
+  ]
+}
